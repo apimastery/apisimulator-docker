@@ -3,7 +3,7 @@ FROM openjdk:8u111-jre-alpine
 
 MAINTAINER http://apisimulator.io/
 
-ENV APISIMULATOR_VERSION 0.5.0
+ENV APISIMULATOR_VERSION 0.5.1
 
 # Download and install API Simulator
 RUN apk update \
