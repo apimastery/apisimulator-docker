@@ -1,9 +1,9 @@
 # API Simulator Dockerfile
-FROM openjdk:8u111-jre-alpine
+FROM openjdk:8u121-jre-alpine
 
 MAINTAINER http://apisimulator.io/
 
-ENV APISIMULATOR_VERSION 0.5.1
+ENV APISIMULATOR_VERSION 0.5.2
 
 # Download and install API Simulator
 RUN apk update \
@@ -25,5 +25,5 @@ ENV PATH /apisimulator/apisimulator-http-$APISIMULATOR_VERSION/bin:$PATH
 
 USER 10101
 
-# No ENTRYPOINT or CMD to allow to run API Simulator or API Recorder from the same image
+CMD ["echo", "Visit apisimulator.io for how to use this image to run API Simulator or API Recorder"]
 # @END
