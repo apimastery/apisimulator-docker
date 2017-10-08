@@ -1,9 +1,9 @@
 # API Simulator Dockerfile
-FROM openjdk:8u121-jre-alpine
+FROM openjdk:8u131-jre-alpine
 
 MAINTAINER http://apisimulator.io/
 
-ENV APISIMULATOR_VERSION 0.5.2
+ENV APISIMULATOR_VERSION 0.6.0
 
 # Download and install API Simulator
 RUN apk update \
